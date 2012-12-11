@@ -1,1 +1,51 @@
-Dashboard Application
+<div class="container">
+  <div class="row">
+    <div class="span6">
+      <h2 class="page-header">
+        Projects
+        <a href="#" class="btn btn-success btn-mini pull-right"><i class="icon-plus"></i> Add New Project</a>
+      </h2>
+
+      <div class="projects-container">
+
+        <% @projects["data"].each do |item| %>
+        <div class="project" style='background-color: <%= item["project"]["color"] %>'>
+          <h3><%= item["project"]["name"] %></h3>
+          <div class="clearfix"></div>
+          <small><%= item["project"]["description"] %></small>
+          <p class="stat">
+            999
+            <span class="people">45 <i class="icon-group"></i></span>
+          </p>
+          <a class="detail"><i class="icon-bar-chart"></i></a>
+        </div>
+        <!--/ .project -->
+        <% end %>
+
+      </div>
+      <!--/ .projects-container -->
+
+    </div>
+    <!--/ .span6 -->
+
+    <div class="span6">
+      <h2 class="page-header">
+        Exceptions
+        <a href="#" class="btn btn-info btn-mini pull-right"><i class="icon-reorder"></i> View All Exceptions</a>
+      </h2>
+
+      <ul class="exceptions">
+        <% @exceptions["data"].each do |item| %>
+          <li>
+            <span class="title"><%= item["exception"]["class_name"] %></span>
+            <span class="description"><%= item["exception"]["friendly"] %></span>
+            <span class="date"><%= item["exception"]["thrown_date"] %></span>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <!--/ .span6 -->
+  </div>
+  <!--/ .row -->
+</div>
+<!--/ .container -->

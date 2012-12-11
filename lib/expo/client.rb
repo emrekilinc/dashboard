@@ -18,6 +18,13 @@ module Expo
       fetch uri
     end
 
+    # Gets exceptions by limit
+    def exceptions limit = 0
+      uri = URI.parse(build_url "exceptions/#{limit}")
+      
+      fetch uri
+    end
+
     def build_url type
       "#{BASE_URL}#{type}?token=#{@token}"
     end
