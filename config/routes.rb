@@ -2,6 +2,8 @@ Dashboard::Application.routes.draw do
   # ProjectController routes
   match 'project/create', :to => 'project#create', :via => :post
   match 'project/detail/:project_code', :to => 'project#detail', :via => :get
+  # GaugesController routes
+  match 'gauges', :to => 'gauges#gauges', :via => :get
 
   # HomeController routes
   match 'about', :to => 'home#about'

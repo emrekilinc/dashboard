@@ -9,13 +9,13 @@
       <div class="projects-container">
 
         <% @projects["data"].each do |item| %>
-        <div class="project" style='background-color: <%= item["project"]["color"] %>'>
+        <div class="project" data-gauge-id="<%= item["project"]["gauges_id"] %>" style='background-color: <%= item["project"]["color"] %>'>
           <h3><%= item["project"]["name"] %></h3>
           <div class="clearfix"></div>
           <small><%= item["project"]["description"] %></small>
           <p class="stat">
-            999
-            <span class="people">45 <i class="icon-group"></i></span>
+            0
+            <span class="people">0 <i class="icon-group"></i></span>
           </p>
           <a href="/project/detail/<%= item["project"]["project_code"] %>" class="detail"><i class="icon-bar-chart"></i></a>
         </div>
@@ -113,3 +113,7 @@
     </div>
   </form>
 </div>
+<% content_for :scripts do %>
+  <script src="/assets/underscore-min.js"></script>
+  <script src="/assets/index.js"></script>
+<% end %>
