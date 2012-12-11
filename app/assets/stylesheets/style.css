@@ -24,7 +24,7 @@ a:hover {
 a:active {
 }
 
-p { 
+p.paraph { 
   font-weight: 200;
   color: #666;
   line-height: 1.6em;
@@ -195,7 +195,7 @@ footer p {
 }
 
 .navbar .brand:hover {
-  color: #777777;
+  color: #b2e2db;
 }
 
 .navbar .nav > li > a {

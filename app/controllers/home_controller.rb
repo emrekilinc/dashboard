@@ -7,7 +7,7 @@ class HomeController < ApplicationController
   def index
     client = Expo::Client.new TOKEN
     @projects = client.projects
-    @exceptions = client.exceptions 25
+    @exceptions = client.exceptions 10
   end
 
   def about
