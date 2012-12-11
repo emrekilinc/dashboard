@@ -10,4 +10,7 @@ class HomeController < ApplicationController
     @exceptions = client.exceptions 25
   end
 
+  def about
+  end
+
 end
