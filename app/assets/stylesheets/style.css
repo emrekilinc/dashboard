@@ -9,6 +9,7 @@ body {
   text-rendering: optimizeLegibility;
 
   padding-top: 60px;
+
 }
 
 a {
@@ -147,6 +148,19 @@ ul.exceptions li .date {
   text-shadow: 0 1px 0 #FFF;
   display: block;
   text-align: right;
+}
+
+footer {
+  margin-top: 15px;
+  height: 60px;
+}
+
+footer .container {
+  border-top: 1px solid #EBEBEB;
+}
+
+footer p {
+  line-height: 60px;
 }
 
 /* 2 - BOOTSTRAP */
