@@ -7,6 +7,7 @@ body {
   -webkit-text-size-adjust:none;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  color: #666;
 
   padding-top: 60px;
 
@@ -98,6 +99,27 @@ h2.page-header .btn {
 .project a.detail:hover {
   text-decoration: none;
   color: #EBEBEB;
+}
+
+.project-info {
+  margin-top: 15px;
+}
+
+.project-info h1 {
+  font-size: 24px;
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+
+.project-info small {
+  line-height: 1.6em;
+  color: #666;
+  font-weight: 200;
+}
+
+.row.content {
+  margin: 25px auto;
 }
 
 ul.exceptions {
@@ -227,4 +249,25 @@ footer p {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+.modal form {
+  margin: 0;
+}
+
+.modal-header {
+  background-color: #0a594d;
+  background-image: -moz-linear-gradient(top, #106e60, #0a594d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#106e60), to(#0a594d));
+  background-image: -webkit-linear-gradient(top, #106e60, #0a594d);
+  background-image: -o-linear-gradient(top, #106e60, #0a594d);
+  background-image: linear-gradient(to bottom, #106e60, #0a594d);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff106e60', endColorstr='#ff0a594d', GradientType=0);
+  border-color: #064239;
+}
+
+.modal-header h3 {
+  color: #FFF;
+  font-size: 18px;
 }
