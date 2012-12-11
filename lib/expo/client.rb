@@ -28,6 +28,12 @@ module Expo
       response
     end
 
+    def detail_project project_code
+      uri = URI.parse(build_url "projects/detail/#{project_code}")
+
+      fetch uri
+    end
+
     def destroy_project params
       uri = URI.parse(build_url_without_token "project/destroy")
       
